@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "ZenFlow",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"]
+}

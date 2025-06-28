@@ -4,10 +4,20 @@
   "version": "1.0",
   "description": "ZenFlow is a new tab extension that helps you focus on your work by providing a minimalistic and calming environment.",
   "permissions": ["tabs"],
+  "web_accessible_resources": [
+    {
+      "resources": ["./build/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
   "background": {
     "service_worker": "background.js"
   },
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    "newtab": "build/index.html"
   }
 }

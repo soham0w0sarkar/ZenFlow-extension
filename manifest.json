@@ -15,7 +15,7 @@
       "matches": ["<all_urls>"]
     },
     {
-      "resources": ["./sidebar/*"],
+      "resources": ["style.css"],
       "matches": ["<all_urls>"]
     }
   ],
@@ -29,7 +29,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content.iife.js"]
     }
   ],
   "chrome_url_overrides": {
